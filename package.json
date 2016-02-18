@@ -1,0 +1,9 @@
+{
+  "name": "mocked-machine-manager.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "mocked-data": "gaggle/mocked-data",
+    "q": "^1.4.1"
+  }
+}
