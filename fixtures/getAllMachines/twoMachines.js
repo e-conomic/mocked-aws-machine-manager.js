@@ -7,8 +7,8 @@ module.exports = function () {
 
 var getMachine = function (opts) {
   return {
-    aws: {instanceId: opts.instanceId || "i-4db187c0"},
     extra: opts.extra || {},
+    instanceId: opts.instanceId || "i-4db187c0",
     name: opts.name || "foo",
     getInst: function () {
       return Q.resolve(

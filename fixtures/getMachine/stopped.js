@@ -4,8 +4,8 @@ var Q = require("q")
 module.exports = function (opts) {
   opts = opts || {}
   return {
-    aws: {instanceId: opts.instanceId || "i-4db187c0"},
     extra: opts.extra || {},
+    instanceId: opts.instanceId || "i-4db187c0",
     lastBuild: opts.lastBuild || {},
     name: opts.name || "foo",
     getInst: function () {
