@@ -14,11 +14,11 @@ module.exports = function (opts) {
         {
           InstanceId: opts.instanceId || "i-4db187c0",
           PublicIpAddress: opts.ip || "0.0.0.0",
-          State: {Name: "running"},
+          State: {Name: opts.state || "running"},
           Tags: [
             {
               Key: "Name",
-              Value: "machine3"
+              Value: opts.name || "machine3"
             },
             {
               Key: "SpawnedBy",
