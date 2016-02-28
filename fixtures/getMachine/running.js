@@ -6,8 +6,9 @@ module.exports = function (opts) {
   return {
     extra: opts.extra || {},
     instanceId: opts.instanceId || "i-4db187c0",
-    lastBuild: opts.lastBuild || {},
     name: opts.name || "foo",
+    _created: opts._created || new Date(),
+    _updated: opts._updated || new Date(),
     getInst: function () {
       return Q.resolve(
         {
